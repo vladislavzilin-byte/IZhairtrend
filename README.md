@@ -55,3 +55,10 @@ jobs:
 ## Notes
 - Replace placeholder gallery/shop images with your own.
 - Hook up shop/booking integrations later (Shopify, etc.).
+
+
+---
+## Vercel
+- Added `vercel.json` (SPA rewrites + cache headers)
+- Added `public/robots.txt` and `public/sitemap.xml`
+- Added OG meta tags in `index.html` and `public/og.png` placeholder
