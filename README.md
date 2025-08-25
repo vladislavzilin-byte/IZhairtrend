@@ -62,3 +62,11 @@ jobs:
 - Added `vercel.json` (SPA rewrites + cache headers)
 - Added `public/robots.txt` and `public/sitemap.xml`
 - Added OG meta tags in `index.html` and `public/og.png` placeholder
+
+
+## GitHub Pages — checklist
+1. Enable **Settings → Pages → Source: GitHub Actions**.
+2. Push to `main`. Workflow `.github/workflows/deploy.yml` builds and publishes automatically.
+3. Router: app auto‑switches to **HashRouter** on `*.github.io` (без 404 при прямых ссылках).
+4. Базовый путь выставляется автоматически из имени репозитория (переменная `VITE_BASE`).
+5. Если видите «белый экран» — очистите Cache/Hard Reload или проверьте консоль на 404 путей `/iz-logo.svg`/`/iz-hero.png`.

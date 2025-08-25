@@ -2,8 +2,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Routes, Route, useNavigate, Link } from 'react-router-dom'
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, useScroll } from 'framer-motion'
 
-const LOGO_SRC = '/iz-logo.svg'
-const HERO_SRC = '/iz-hero.png'
+const LOGO_SRC = (import.meta.env.BASE_URL || '/') + 'iz-logo.svg'
+const HERO_SRC = (import.meta.env.BASE_URL || '/') + 'iz-hero.png'
 
 const dict = {
   lt: {
